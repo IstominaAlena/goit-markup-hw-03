@@ -97,6 +97,11 @@ p {
 .image {
   display: block;
 }
+
+.section-title.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+}
 /* =====End Components===== */
 
 /* ===== Header ===== */
@@ -197,7 +202,10 @@ p {
 /* ===== Hero ===== */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--accent-background-color);
+
   text-align: center;
 }
 .hero-title {
@@ -314,7 +322,7 @@ p {
 }
 
 .member-container {
-  padding: 30px 58px;
+  padding: 30px 20px;
 }
 
 /* ===== End Our team ===== */
@@ -326,6 +334,11 @@ p {
   padding-bottom: 60px;
 
   background-color: var(--accent-background-color);
+}
+
+.contacts.bottom {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo.second {
@@ -341,8 +354,6 @@ p {
 }
 
 .lower-contact {
-  display: flex;
-  flex-direction: column;
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
@@ -384,8 +395,8 @@ p {
   text-align: center;
 }
 
-.filter.button:hover,
-.filter.button:focus {
+.filter-button:hover,
+.filter-button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
@@ -412,6 +423,8 @@ p {
 }
 
 .card-link {
+  /* display: block; */
+
   text-decoration: none;
 }
 
